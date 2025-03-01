@@ -3,7 +3,8 @@ public    class Animal {
     String family;
     String name;
     int age;
-    boolean isMammal;    public Animal(){}
+    boolean isMammal;
+    public Animal(){}
     public Animal(String family,String name,int age,boolean isMammal){
         this.family=family;
         this.name=name;
@@ -13,10 +14,12 @@ public    class Animal {
 
 
     @Override
-    public String toString() {
-        return "Animal{name='" + name + "', family='" + family + "', age=" + age + ", isMammal=" + isMammal + "}";
+    public String toString(){
+        return "Family : "+family+"\n"+"Name : "+name+"\n"+
+                "Age : "+age+"\n"+"isMammal :"+isMammal;
     }
 
 }
+
 
 
